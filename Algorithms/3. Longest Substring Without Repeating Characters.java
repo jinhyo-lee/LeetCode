@@ -1,6 +1,6 @@
 public class Solution {
 
-    public static int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring(String s) {
         boolean[] arr = new boolean[256];
         int r = 0, l = 0, max = 0, n = s.length();
         while (r < n) {
