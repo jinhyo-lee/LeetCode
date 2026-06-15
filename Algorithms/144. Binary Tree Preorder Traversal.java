@@ -11,12 +11,12 @@ public class Solution {
         return list;
     }
 
-    private void dfs(TreeNode root, List<Integer> list) {
-        if (root == null) return;
+    private void dfs(TreeNode node, List<Integer> list) {
+        if (node == null) return;
 
-        list.add(root.val);
-        dfs(root.left, list);
-        dfs(root.right, list);
+        list.add(node.val);
+        dfs(node.left, list);
+        dfs(node.right, list);
     }
 
 }
